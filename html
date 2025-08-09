@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">ART-CRAFT</h1>
+                <p class="paragraph">A place where art exists</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">ART</h1>
+
+            <!-- Mona Lisa Card -->
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionMonaLisaDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Mona Lisa</h1>
+                    <p class="favourite-place-card-description">
+                        The Mona Lisa is a famous Renaissance portrait by Leonardo da Vinci, renowned for her enigmatic smile and realism.
+                    </p>
+                </div>
+                <img src="https://th.bing.com/th/id/OIP.RqbpG6Qvi_o4e4KuktkshQHaLC?rs=1&pid=ImgDetMain" class="favourite-place-card-image" />
+            </div>
+
+            <!-- The Last Supper Card -->
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionLastSupperDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">The Last Supper</h1>
+                    <p class="favourite-place-card-description">
+                        The Last Supper is one of Leonardo's most famous works, depicting the moment when Jesus announces that one of his disciples will betray him.
+                    </p>
+                </div>
+                <img src="https://th.bing.com/th/id/OIP.DFqZPFGqkZY_7lvhd90OLgHaC8?w=304&h=139&c=7&r=0&o=5&pid=1.7" class="favourite-place-card-image" />
+            </div>
+
+            <!-- Vitruvian Man Card -->
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionVitruvianManDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Vitruvian Man</h1>
+                    <p class="favourite-place-card-description">
+                        The Vitruvian Man by Leonardo is a drawing that illustrates the ideal human proportions based on the work of the architect Vitruvius.
+                    </p>
+                </div>
+                <img src="https://th.bing.com/th/id/OIP.6cya2GqtjC-ZQZgByLU-mAHaDW?w=349&h=158&c=7&r=0&o=5&pid=1.7" class="favourite-place-card-image" />
+            </div>
+
+            <!-- Annunciation Card -->
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionAnnunciationDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Annunciation</h1>
+                    <p class="favourite-place-card-description">
+                        Annunciation is one of Leonardo's early works, depicting the Angel Gabriel announcing to the Virgin Mary that she will conceive the Son of God.
+                    </p>
+                </div>
+                <img src="https://th.bing.com/th/id/OIP.PgMa4bEwQxHPyG5m95drdwAAAA?w=188&h=184&c=7&r=0&o=5&pid=1.7" class="favourite-place-card-image" />
+            </div>
+
+            <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+        </div>
+    </div>
+
+    <!-- Mona Lisa Detailed View -->
+    <div id="sectionMonaLisaDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Mona_Lisa_-_the_Louvre.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.guim.co.uk/img/media/eeb5e2e9f42469c6d4512eb899f67933b1ed5eaf/0_241_4098_2459/master/4098.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d77dcc64eb4f1bc3e55f0e03cc3c3f37" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIP.FrFDT1dbtZeJ_QXPWqGxewHaJZ?rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Mona Lisa</h1>
+                    <p class="detailed-view-card-description">
+                        The Mona Lisa, painted by Leonardo da Vinci between 1503 and 1506, is one of the most iconic works of art in history. Displayed in the Louvre Museum in Paris, it features a woman with a mysterious smile, which has intrigued viewers for centuries. The use of sfumato, a technique of blending colors, adds to the painting's realism and lifelike presence. It represents the peak of Renaissance portraiture.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+        </div>
+    </div>
+
+    <!-- The Last Supper Detailed View -->
+    <div id="sectionLastSupperDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="lastSupperCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#lastSupperCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#lastSupperCarousel" data-slide-to="1"></li>
+                        <li data-target="#lastSupperCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://th.bing.com/th/id/OSK.HEROe9GwgFU8CoR8V8ZIME09EO5rN_i0mGofTehmAnGPRWs?rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIP.MERSfBTACiOP-gklBlO0_wHaFE?rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIP.U4fpYvtDB9GqLBIIui2tdwAAAA?rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#lastSupperCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#lastSupperCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">The Last Supper</h1>
+                    <p class="detailed-view-card-description">
+                        Painted by Leonardo da Vinci between 1495 and 1498, The Last Supper captures the moment when Jesus announces that one of his disciples will betray him. It is located in the Convent of Santa Maria delle Grazie in Milan, Italy. This masterpiece is renowned for its innovative composition, dramatic use of perspective, and detailed portrayal of human emotion, representing a pivotal moment in Christian history.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+        </div>
+    </div>
+
+    <!-- Vitruvian Man Detailed View -->
+    <div id="sectionVitruvianManDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="vitruvianManCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#vitruvianManCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#vitruvianManCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://th.bing.com/th/id/OIP.eVY8rvD3ht8-AgKIEHeanAAAAA?w=173&h=194&c=7&r=0&o=5&pid=1.7" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIP.m-BW8yI7nNoADC2ny6IYjAAAAA?w=182&h=187&c=7&r=0&o=5&pid=1.7" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#vitruvianManCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#vitruvianManCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Vitruvian Man</h1>
+                    <p class="detailed-view-card-description">
+                        The Vitruvian Man is a drawing by Leonardo da Vinci made around 1490, illustrating the proportions of the human body as described by the ancient Roman architect Vitruvius. This drawing embodies the link between art and science and represents the ideal proportions of the human body. It is held at the Gallerie dell'Accademia in Venice.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+        </div>
+    </div>
+
+    <!-- Annunciation Detailed View -->
+    <div id="sectionAnnunciationDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="annunciationCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#annunciationCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#annunciationCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://th.bing.com/th/id/OIP.5o0FGCUAS_MauYQ7lXssjAHaFY?w=253&h=184&c=7&r=0&o=5&pid=1.7" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIP.lkJmMfr__zgO_dfBAnQjfgHaFj?w=270&h=202&c=7&r=0&o=5&pid=1.7" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#annunciationCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#annunciationCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Annunciation</h1>
+                    <p class="detailed-view-card-description">
+                        Annunciation is an early work by Leonardo, created around 1472. It depicts the Angel Gabriel announcing to the Virgin Mary that she will conceive the Son of God. It was one of Leonardo's first masterpieces, demonstrating his skill in perspective and naturalistic portrayal of human figures. The work is held in the Uffizi Gallery in Florence, Italy.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+        </div>
+    </div>
+</body>
+
+</html>
