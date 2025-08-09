@@ -1,0 +1,190 @@
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main section styles */
+#sectionHome {
+    height: 100vh;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/57/Leonardo_da_Vinci_-_The_Last_Supper.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #e55b51;
+}
+
+/* Section for Favourite Places */
+#sectionFavouritePlaces {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.favourite-places-heading {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
+
+.favourite-place-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.favourite-place-card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.favourite-place-card-heading {
+    font-size: 1.75rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.favourite-place-card-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.favourite-place-card-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Detailed View */
+.detailed-view-bg-container {
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.detailed-view-heading {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.detailed-view-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-inner {
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.detailed-view-card-text-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.detailed-view-card-heading {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.detailed-view-card-description {
+    font-size: 1.125rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.btn-dark {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #2c3e50;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .favourite-place-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .favourite-place-card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .detailed-view-card-container {
+        align-items: flex-start;
+    }
+
+    .detailed-view-card-heading {
+        font-size: 1.75rem;
+    }
+
+    .detailed-view-card-description {
+        font-size: 1rem;
+    }
+
+    .carousel-inner {
+        max-width: 100%;
+    }
+}
